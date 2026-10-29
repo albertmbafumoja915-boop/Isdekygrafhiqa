@@ -1,0 +1,135 @@
+/* ===== RESET QUI REMPLIT L'ECRAN ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;background:linear-gradient(rgba(167, 174, 197, 0.85), rgba(8,35,81,0.75))}
+/* ===== MENU DU HAUT ===== */
+.main-nav{
+  width:100%;
+  background:#fff;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 10px rgba(0,0,0,0.06);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.logo-text b{font-size:20px;color:#000;display:block;line-height:1}
+.logo-text span{font-size:9px;color:#0139aa;letter-spacing:1.5px;font-weight:700}
+.menu{display:flex;gap:24px}
+.menu a{
+  text-decoration:none;
+  color:#0A2351;
+  font-weight:600;
+  font-size:13px;
+  padding-bottom:5px;
+  border-bottom:3px solid transparent;
+}
+.menu a.active{border-bottom:3px solid #0A2351;color:#000}
+/* ===== CONTACT - VERSION PETITE ===== */
+#contact{
+  width:100%;
+  min-height:auto;
+  padding:20px 60px 30px 60px;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+}
+
+.logo-top{display:flex;align-items:center;gap:12px;margin-bottom:15px}
+.logo-ig{
+  background:#DC052D;color:#fff;
+  width:40px;height:40px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:18px
+}
+.logo-text-contact{letter-spacing:5px;font-size:13px}
+
+.titre-contact{
+  font-size:42px;
+  font-weight:900;
+  text-align:center;
+  letter-spacing:2px;
+}
+.sous-titre{
+  text-align:center;
+  color:#DC052D;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:6px
+}
+
+.contact-main{
+  display:flex;
+  gap:50px;
+  margin-top:25px;
+  flex:1;
+  align-items:flex-start;
+}
+.col-left{flex:1}
+.col-right{flex:1;display:flex;justify-content:flex-end}
+
+.info-line{display:flex;gap:12px;align-items:center;margin-bottom:22px}
+.icon-cercle{
+  background:#644c50;
+  width:42px;height:42px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:18px;
+  flex-shrink:0;
+}
+.label{font-size:9px;color:#999;letter-spacing:1px}
+.value{font-weight:700;font-size:14px;margin-top:2px}
+.value-email{font-size:12px}
+.box-contact{
+  width:100%;
+  max-width:400px;
+  border:1px solid #eee;
+  border-radius:18px;
+  padding:22px;
+  background:#fff;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+.box-contact h3{font-size:18px;margin-bottom:6px}
+.box-contact p.desc{color:#666;font-size:12px;line-height:1.5;margin-bottom:18px}
+.btn{
+  display:block;
+  padding:12px;
+  border-radius:10px;
+  text-align:center;
+  text-decoration:none;
+  font-weight:700;
+  font-size:13px;
+  margin-bottom:10px;
+}
+.btn-red{background:#6ae938;color:#fff}
+.btn-outline{border:1.5px solid #130a0b;color:#ffffff;background:#2241f5f6}
+.footer{margin-top:35px;text-align:center}
+.tagline{display:flex;align-items:center;justify-content:center;gap:15px}
+.tagline .line{height:1px;width:70px;background:#f0c0c8}
+.tagline p{color:#030303;font-weight:bold;letter-spacing:4px;font-size:12px}
+.copyright{text-align:center;color:#999;font-size:10px;margin-top:12px}
+/* MOBILE */
+@media(max-width:850px){
+  .main-nav{padding:12px 20px}
+  #contact{padding:20px}
+  .titre-contact{font-size:32px}
+  .contact-main{flex-direction:column;gap:25px}
+  .col-right{justify-content:flex-start}
+}
+/* CENTRE QR - COMME SUR TON IMAGE */
+.col-center{flex:1.2;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.qr-frame{
+  width:100%;
+  max-width:380px;
+  height:260px;
+  border:6px solid #000000;
+  background:#ffffff;
+  padding:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.qr-frame img{width:100%;height:100%;object-fit:contain}
+.qr-text{margin-top:10px;font-size:12px;font-weight:700;color:#070707;letter-spacing:1px}

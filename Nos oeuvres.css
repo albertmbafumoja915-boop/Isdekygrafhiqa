@@ -1,0 +1,10 @@
+body{
+    
+    background:
+    url(img/IMG-20261004-WA9597.jpg);
+    background-size:contain;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+  
+}

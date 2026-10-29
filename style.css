@@ -1,0 +1,126 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background-image:}
+.top-left{font-size:12px; font-weight:600}
+.top-right{display:CENTER; gap:10px; align-items:center; flex-wrap:wrap}
+.pill{
+  border-radius:30px; padding:9px 16px; font-size:16px; font-weight:700;
+  text-decoration:none; color:#fff;position: absolute;align-items: center;
+}
+.pill.wa{background:#2DBE5D}
+.pill.gmail{background:#E94441}
+.pill.lang{background:rgba(12, 12, 12, 0.856)}
+.pill.reserve{
+  background:#082A68; border-radius:10px; padding:8px 14px;
+  line-height:1.1; border:1px solid rgba(255,255,255,0.15)
+}
+.pill.reserve small{font-size:9px; opacity:0.7; display:block; font-weight:400}
+
+/* NAV BLANC */
+.main-nav{
+  background:#FFFFFF;
+  padding:0px 20px;
+  display:flex; justify-content:space-between; align-items:center;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky; top:0; z-index:5;
+}
+.logo-box{display:flex; gap:12px; align-items:center}
+
+/*LOGO IMAGE ISDEKY */
+.logo-img{
+  width: 200px;;
+  height:100px;
+  object-fit:contain;
+  border-radius:60px;
+  background:#0f0f0f;
+}
+
+.logo-text b{font-size:25px; color:#050505; display:block; line-height:1.1}
+.logo-text span{font-size:9px; color:#0139aa; letter-spacing:1px; font-weight:600}
+.menu{display:flex; gap:24px}
+.menu a{text-decoration:none; color:#0A2351; font-weight:600; font-size:13px; padding-bottom:4px}
+.menu a.active{border-bottom:3px solid #090a0a}
+
+/* HERO AVEC FOND PHOTO + VOILE BLEU */
+.hero{
+  height:85vh;
+  background: 
+    linear-gradient(rgba(13, 21, 49, 0.85), rgba(8,35,81,0.75)),
+    url(img/DJI_0642.jpg);
+  background-size:cover;
+  background-position:center;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  text-align:center; color:#fff; padding:20px;
+}
+.hero h1{font-size:56px; font-weight:900}
+.hero p{font-size:18px; color:#C8EACF; margin:16px 0 32px}
+.hero-btns{display:flex; gap:14px; flex-wrap:wrap; justify-content:center}
+.btn-hero{
+  padding:14px 28px; border-radius:30px; text-decoration:none;
+  font-weight:700; font-size:13px;
+}
+.btn-hero.green{background:#2DBE5D; color:#fff; box-shadow:0 8px 20px rgba(45,190,93,0.3)}
+.btn-hero.outline{background:transparent; color:#fff; border:2px solid #fff}
+
+@media(max-width:700px){
+  .hero h1{font-size:30px}
+  .menu{display:none}
+}
+footer{
+  background-color: rgb(182, 182, 177);
+  color: #02060a;
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid var(--primary-color);
+}
+/* ===== FIX RESPONSIVE PAGE CONTACT - ISDEKY ===== */
+
+/* Le conteneur principal contact */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Le cadre QR noir */
+.qr-frame {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #000;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.qr-frame img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+/* === SUR TELEPHONE === */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column !important;
+  }
+
+  /* Les infos à gauche passent en haut */
+  .contact-infos {
+    width: 100% !important;
+  }
+
+  /* Le QR passe en bas, plus petit */
+  .qr-frame {
+    width: 250px !important;
+    height: 250px !important;
+    margin-top: 20px !important;
+  }
+
+  /* Le texte God is Good trop grand */
+  .contact-container h3, 
+  .contact-container p {
+    text-align: center;
+  }
+}

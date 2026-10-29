@@ -1,0 +1,92 @@
+/* ===== PAGE SERVICES - COMME TON IDÉE ===== */
+
+.services-page{
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #0619c5;
+}
+.services-big-title{
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #0d00c9;
+}
+.services-desc{
+  color: #555;
+  font-size: 15px;
+  margin: 10px auto 40px auto;
+}
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.service-card{
+  background: rgb(218, 215, 215);
+  border: 2px solid #d0d0d0;
+  border-radius: 16px;
+  padding: 35px 20px;
+  transition: 0.2s;
+}
+.service-card:hover{
+  border-color: #0A2351;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+.icon-box{
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px auto;
+  border: 2px solid #880e0e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+.service-card h3{
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0;
+  color: #000;
+}
+.menu{display:flex; gap:24px}
+.menu a{text-decoration:none; color:#0A2351; font-weight:600; font-size:13px; padding-bottom:4px}
+.menu .active{border-bottom:3px solid #2bb6b6}
+.service-card p{
+  color: #222;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.services-contact{
+  margin-top: 40px;
+  color: #555;
+  font-size: 13px;
+}
+
+/* Responsive téléphone */
+@media(max-width:600px){
+  .services-grid{ grid-template-columns: 1fr; }
+}
+.btn-voir{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 22px;
+  border: 2px solid #0A2351;
+  border-radius: 25px;
+  color: #0A2351;
+  font-weight: 800;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-voir:hover{
+  background: #0A2351;
+  color: rgb(179, 0, 0);
+  transform: translateY(-2px);
+}
